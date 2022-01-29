@@ -1,3 +1,10 @@
-# bookish-molly
-    
-    This is the lesson repository for bookish-molly
+# The Carpentries Workbench Template Markdown Lesson
+
+This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
+
+To get started using this template, visit https://github.com/carpentries/workbench-template-rmd/generate
+and follow the instructions.
+
+If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
+
+[workbench]: https://carpentries.github.io/sandpaper-docs/
