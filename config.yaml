@@ -13,7 +13,7 @@ carpentry: incubator
 # Overall title for pages.
 title: Lesson Title
 
-# Date the lesson was created (this is empty by default)
+# Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
 
 # Comma-separated list of keywords for the lesson
