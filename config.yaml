@@ -8,48 +8,48 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: The Carpentries Incubator
-carpentry: incubator
+carpentry: 'incubator'
 
 # Overall title for pages.
-title: Lesson Title
+title: 'Lesson Title'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
 
 # Comma-separated list of keywords for the lesson
-keywords: software, data, lesson, The Carpentries
+keywords: 'software, data, lesson, The Carpentries'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: pre-alpha
+life_cycle: 'pre-alpha'
 
 # License of the lesson
-license: CC-BY 4.0
+license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: https://github.com/carpentries/workbench-template-md
+source: 'https://github.com/carpentries/workbench-template-md'
 
 # Default branch of your lesson
-branch: main
+branch: 'main'
 
 # Who to contact if there are any issues
-contact: team@carpentries.org
+contact: 'team@carpentries.org'
 
 # Navigation ------------------------------------------------
-# 
+#
 # Use the following menu items to specify the order of
 # individual pages in each dropdown section. Leave blank to
 # include all pages in the folder.
 #
 # Example -------------
-# 
+#
 # episodes:
 # - introduction.md
 # - first-steps.md
-# 
+#
 # learners:
 # - setup.md
-# 
+#
 # instructors:
 # - instructor-notes.md
 #
@@ -57,8 +57,9 @@ contact: team@carpentries.org
 # - one-learner.md
 # - another-learner.md
 
-# Order of episodes in your lesson 
+# Order of episodes in your lesson
 episodes: 
+- introduction.md
 
 # Information for Learners
 learners: 
@@ -68,4 +69,10 @@ instructors:
 
 # Learner Profiles
 profiles: 
+
+# Customisation ---------------------------------------------
+#
+# This space below is where custom yaml items (e.g. pinning
+# sandpaper and varnish versions) should live
+
 
