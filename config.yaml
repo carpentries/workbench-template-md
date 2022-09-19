@@ -6,9 +6,9 @@
 # swc: Software Carpentry
 # dc: Data Carpentry
 # lc: Library Carpentry
-# cp: Carpentries (to use for instructor training for instance)
+# cp: Carpentries (to use for instructor traning for instance)
 # incubator: The Carpentries Incubator
-carpentry: 'cp'
+carpentry: 'incubator'
 
 # Overall title for pages.
 title: 'Lesson Title'

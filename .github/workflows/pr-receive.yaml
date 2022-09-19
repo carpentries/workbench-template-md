@@ -7,20 +7,40 @@ on:
 
 jobs:
   test-pr:
-    name: "Test if pull request is valid"
+    name: "Record PR number"
     if: ${{ github.event.action != 'closed' }}
     runs-on: ubuntu-latest
     outputs:
       is_valid: ${{ steps.check-pr.outputs.VALID }}
     steps:
+      - name: "Record PR number"
+        id: record
+        if: ${{ always() }}
+        run: |
+          echo ${{ github.event.number }} > ${{ github.workspace }}/NR # 2022-03-02: artifact name fixed to be NR
+      - name: "Upload PR number"
+        id: upload
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr
+          path: ${{ github.workspace }}/NR
+      - name: "Get Invalid Hashes File"
+        id: hash
+        run: |
+          echo "::set-output name=json::"$(curl -sL https://files.carpentries.org/invalid-hashes.json)
+      - name: "echo output"
+        run: |
+          echo ${{ steps.hash.outputs.json }}
       - name: "Check PR"
         id: check-pr
         uses: carpentries/actions/check-valid-pr@main
         with:
           pr: ${{ github.event.number }}
+          invalid: ${{ fromJSON(steps.hash.outputs.json)[github.repository] }}
 
   build-md-source:
-    name: "Build markdown source files"
+    name: "Build markdown source files if valid"
     needs: test-pr
     runs-on: ubuntu-latest
     if: ${{ needs.test-pr.outputs.is_valid == 'true' }}
@@ -41,10 +61,13 @@ jobs:
           path: ${{ env.MD }}
 
       - name: "Set up R"
-        uses: r-lib/actions/setup-r@v1
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+          install-r: false
 
       - name: "Set up Pandoc"
-        uses: r-lib/actions/setup-pandoc@v1
+        uses: r-lib/actions/setup-pandoc@v2
         with:
           pandoc-version: "2.11.4"
 
@@ -58,10 +81,11 @@ jobs:
         with:
           cache-version: ${{ secrets.CACHE_VERSION }}
 
-      - name: "Build Site"
+      - name: "Validate and Build Markdown"
         id: build-site
         run: |
           sandpaper::package_cache_trigger(TRUE)
+          sandpaper::validate_lesson(path = '${{ github.workspace }}')
           sandpaper:::build_markdown(path = '${{ github.workspace }}', quiet = FALSE)
         shell: Rscript {0}
 
@@ -101,29 +125,3 @@ jobs:
       - name: "Teardown"
         run: sandpaper::reset_site()
         shell: Rscript {0}
-
-  comment-changed-workflow:
-    name: "Comment if workflow files have changed"
-    needs: test-pr
-    runs-on: ubuntu-latest
-    if: ${{ needs.test-pr.outputs.is_valid != 'true' }}
-    steps:
-      - name: "Record PR number"
-        id: record
-        run: |
-          echo ${{ github.event.number }} > ${{ github.workspace }}/NR # 2022-03-02: artifact name fixed to be NR
-      - name: "Upload PR number"
-        id: upload
-        uses: actions/upload-artifact@v2
-        with:
-          name: pr
-          path: ${{ github.workspace }}/NR
-      - name: "Comment on PR"
-        id: comment-diff
-        uses: carpentries/actions/comment-diff@main
-        with:
-          pr: ${{ github.event.number }}
-          body: |
-            This pull request contains modified workflows and no preview will be created.
-
-            Unless these changes come from a trusted source, please inspect the changes for any malicious content.
