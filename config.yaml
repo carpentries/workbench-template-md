@@ -11,29 +11,29 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'Lesson Title' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~
+created: ~ # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'software, data, lesson, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha'
+life_cycle: 'pre-alpha' # FIXME
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md'
+source: 'https://github.com/carpentries/workbench-template-md' # FIXME
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'team@carpentries.org' # FIXME
 
 # Navigation ------------------------------------------------
 #
