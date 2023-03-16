@@ -49,6 +49,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
   </url>
   <url>
@@ -59,5 +62,8 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
   </url>
 </urlset>
