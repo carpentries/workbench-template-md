@@ -1,3 +1,4 @@
+---
 name: "Bot: Send Close Pull Request Signal"
 
 on:
@@ -20,4 +21,3 @@ jobs:
         with:
           name: pr
           path: ./pr
-

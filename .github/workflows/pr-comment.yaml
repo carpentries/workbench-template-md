@@ -1,3 +1,4 @@
+---
 name: "Bot: Comment on the Pull Request"
 
 # read-write repo token
@@ -48,7 +49,7 @@ jobs:
         id: bad-pr
         if: ${{ steps.dl.outputs.success != 'true' }}
         run: |
-          echo '::error::A pull request number was not recorded. The pull request that triggered this workflow is likely malicious.'
+          echo '::error:: A pull request number was not recorded. The pull request that triggered this workflow is likely malicious.'
           exit 1
       - name: "Get Invalid Hashes File"
         id: hash
@@ -63,9 +64,11 @@ jobs:
         with:
           pr: ${{ steps.get-pr.outputs.NUM }}
           sha: ${{ github.event.workflow_run.head_sha }}
-          headroom: 3 # if it's within the last three commits, we can keep going, because it's likely rapid-fire
           invalid: ${{ fromJSON(steps.hash.outputs.json)[github.repository] }}
           fail_on_error: true
+          # keep going if it's within the last three commits,
+          # because it's likely rapid-fire
+          headroom: 3
 
   # Create an orphan branch on this repository with two commits
   #  - the current HEAD of the md-outputs branch
@@ -182,4 +185,3 @@ jobs:
         with:
           pr: ${{ env.NR }}
           body: ${{ env.body }}
-
