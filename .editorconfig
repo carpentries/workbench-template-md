@@ -1,0 +1,20 @@
+# Propagate stylistic preferences across editors:
+# <https://editorconfig.org>
+
+# Look no further: this file governs everything below.
+root = true
+
+# Files ought to end on a new line.
+# Lines should not end in blank spaces.
+[*]
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Wrap Markdown at 75 characters
+[*.md]
+max_line_length = 75
+
+# Indent YAML  with 2 spaces.
+[*.yaml]
+indent_style = space
+indent_size = 2
