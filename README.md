@@ -1,9 +1,12 @@
 # The Carpentries Workbench Template Markdown Lesson
 
-This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
+This lesson is a template lesson that uses
+[The Carpentries Workbench][workbench].
 
-To get started using this template, make sure you're logged into Github and visit https://github.com/carpentries/workbench-template-md/generate
+To get started using this template,
+visit <https://github.com/carpentries/workbench-template-md/generate>
 and follow the instructions.
+Make sure you're logged into Github!
 
 If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
 
