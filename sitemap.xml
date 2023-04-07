@@ -4,6 +4,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/01-introduction.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/404.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
@@ -20,6 +23,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/01-introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/404.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/CODE_OF_CONDUCT.html</loc>
