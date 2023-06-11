@@ -81,6 +81,13 @@ accessibility purposes'}`
 
 ![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
 
+::::::::::::::::::::::::::::::::::::: callout
+
+Callout sections can highlight information.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Math
 
 One of our episodes contains $\LaTeX$ equations when describing how to create
