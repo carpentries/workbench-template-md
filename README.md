@@ -5,8 +5,8 @@ This lesson is a template lesson that uses [The Carpentries Workbench][workbench
 ## Create a new repository from this template
 
 To use this template to start a new lesson repository, 
-make sure you're logged into Github 
-visit https://github.com/carpentries/workbench-template-md/generate
+make sure you're logged into Github.   
+Visit https://github.com/carpentries/workbench-template-md/generate
 and follow the instructions.
 Checking the 'Include all branches' option will save some time waiting for the first website build
 when your new repository is initialised.
