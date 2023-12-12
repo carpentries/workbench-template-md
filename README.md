@@ -11,7 +11,7 @@ and follow the instructions.
 Checking the 'Include all branches' option will save some time waiting for the first website build
 when your new repository is initialised.
 
-If you have any questions, contact [@zkamvar](https://github.com/zkamvar)
+If you have any questions, contact [@tobyhodges](https://github.com/tobyhodges)
 
 ## Configure a new lesson
 
