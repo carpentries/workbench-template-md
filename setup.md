@@ -20,35 +20,35 @@ Download the [data zip file](https://example.com/FIXME) and unzip it to your Des
 
 ### Details
 
-Setup for different systems can be presented in dropdown menus via a `solution`
+Setup for different systems can be presented in dropdown menus via a `spoiler`
 tag. They will join to this discussion block, so you can give a general overview
 of the software used in this lesson here and fill out the individual operating
 systems (and potentially add more, e.g. online setup) in the solutions blocks.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::: solution
+:::::::::::::::: spoiler
 
 ### Windows
 
 Use PuTTY
 
-:::::::::::::::::::::::::
+::::::::::::::::::::::::
 
-:::::::::::::::: solution
+:::::::::::::::: spoiler
 
 ### MacOS
 
 Use Terminal.app
 
-:::::::::::::::::::::::::
+::::::::::::::::::::::::
 
 
-:::::::::::::::: solution
+:::::::::::::::: spoiler
 
 ### Linux
 
 Use Terminal
 
-:::::::::::::::::::::::::
+::::::::::::::::::::::::
 
