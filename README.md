@@ -49,8 +49,16 @@ complete the initial configuration of a new lesson repository built from this te
    - the life cycle of the lesson (e.g. `pre-alpha`)
    - the human language the lesson is written in (e.g. `deutsch`)
 1. **Adjust the 
-   `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `LICENSE.md` files**
+   `CITATION.cff`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `LICENSE.md` files**
    as appropriate for your project.
+   -  `CITATION.cff`:
+      this file contains information that people can use to cite your lesson,
+      for example if they publish their own work based on it.
+      You should [update the CFF][cff-sandpaper-docs] now to include information about your lesson,
+      and remember to return to it periodicallt, keeping it updated as your
+      author list grows and other details become available or need to change.
+      The [Citation File Format home page][cff-home] gives more information about the format,
+      and the [`cffinit` webtool][cffinit] can be used to create new and update existing CFF files.
    -  `CODE_OF_CONDUCT.md`: 
       if you are using this template for a project outside The Carpentries,
       you should adjust this file to describe 
@@ -69,4 +77,7 @@ complete the initial configuration of a new lesson repository built from this te
    [relevant information about your lesson](https://carpentries.github.io/lesson-development-training/collaborating-newcomers.html#readme)**
    and delete this section.
 
+[cff-home]: https://citation-file-format.github.io/
+[cff-sandpaper-docs]:  https://carpentries.github.io/sandpaper-docs/editing.html#making-your-lesson-citable
+[cffinit]: https://citation-file-format.github.io/cff-initializer-javascript/
 [workbench]: https://carpentries.github.io/sandpaper-docs/
