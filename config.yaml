@@ -8,7 +8,14 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
+# 
+# This option supports custom types so lessons can be branded
+# and themed with your own logo and alt-text (see `carpentry_description`)
+# See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
 carpentry: 'incubator'
+
+# Alt-text description of the lesson.
+carpentry_description: 'Lesson Description'
 
 # Overall title for pages.
 title: 'Lesson Title' # FIXME
