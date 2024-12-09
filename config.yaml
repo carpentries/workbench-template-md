@@ -12,7 +12,7 @@
 # This option supports custom types so lessons can be branded
 # and themed with your own logo and alt-text (see `carpentry_description`)
 # See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
-carpentry: 'incubator'
+carpentry: 'uom'
 
 # Alt-text description of the lesson.
 carpentry_description: 'Lesson Description'
@@ -82,4 +82,7 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
+# This is the MB varnish, which is a custom version of the Carpentries varnish
+varnish: 'melbournebionformatics/mb-varnish@main'
+url: 'melbournebioinformatics.github.io/mb-varnish'
 
