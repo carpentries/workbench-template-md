@@ -83,6 +83,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 # This is the MB varnish, which is a custom version of the Carpentries varnish
-varnish: 'melbournebionformatics/mb-varnish@main'
+varnish: 'melbournebioinformatics/mb-varnish@main'
 url: 'melbournebioinformatics.github.io/mb-varnish'
 
