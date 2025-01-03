@@ -55,7 +55,7 @@ complete the initial configuration of a new lesson repository built from this te
       this file contains information that people can use to cite your lesson,
       for example if they publish their own work based on it.
       You should [update the CFF][cff-sandpaper-docs] now to include information about your lesson,
-      and remember to return to it periodicallt, keeping it updated as your
+      and remember to return to it periodically, keeping it updated as your
       author list grows and other details become available or need to change.
       The [Citation File Format home page][cff-home] gives more information about the format,
       and the [`cffinit` webtool][cffinit] can be used to create new and update existing CFF files.
