@@ -77,7 +77,7 @@ profiles:
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-# This is the MB varnish, which is a custom version of the Carpentries varnish
-varnish: 'melbournebioinformatics/mb-varnish@main'
-url: 'melbournebioinformatics.github.io/mb-varnish'
+# This is the UoM varnish, which is a custom version of the Carpentries varnish
+varnish: 'melbournebioinformatics/uom-varnish@main'
+url: 'melbournebioinformatics.github.io/uom-varnish'
 
