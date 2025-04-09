@@ -25,8 +25,9 @@ complete the initial configuration of a new lesson repository built from this te
    navigate to _Settings_,
    select _Pages_ from the left sidebar,
    and make sure that `gh-pages` is selected as the branch to build from.
-   If no `gh-pages` branch is available, check _Actions_ to see if the first
+   If no `gh-pages` branch is available, check the _Actions_ tab to see if the first
    website build workflows are still running.
+   If they're not running you, you may need to manually enable them via the _Actions_ tab.
    The branch should become available when those have completed.
 1. **Adjust the `config.yaml` file:**
    this file contains global parameters for your lesson site.
