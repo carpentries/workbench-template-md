@@ -1,7 +1,7 @@
 ---
 title: "Using Markdown"
-teaching: 10
-exercises: 2
+teaching: 10 # teaching time in minutes
+exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
