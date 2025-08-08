@@ -1,0 +1,18 @@
+{
+    "remoteUser":"rstudio",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/rstudio/lesson,type=bind",
+    "workspaceFolder": "/home/rstudio/lesson",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/rstudio/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gnupg,target=/home/rstudio/.gnupg,type=bind,consistency=cached"
+    ],
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "postCreateCommand": {
+        "pre_echo": "echo 'Installing lesson prerequisites - please wait...'",
+        "lesson_deps": "Rscript /home/rstudio/.workbench/setup_lesson_deps.R",
+        "fortify": "Rscript /home/rstudio/.workbench/fortify_renv_cache.R"
+    }
+}
