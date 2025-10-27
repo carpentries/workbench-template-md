@@ -10,15 +10,15 @@
 carpentry: 'uom'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'Lesson Description' # FIXME
 
 # Overall title for pages.
 title: 'Lesson Title' # FIXME
 
-# Date the lesson was created (YYYY-MM-DD, this is empty by default)
+# Date the lesson was created ('YYYY-MM-DD', this is empty by default)
 created: ~ # FIXME
 
-# Comma-separated list of keywords for the lesson
+# Comma-separated list of keywords for the lesson. Avoid words in the title.
 keywords: 'software, data, lesson' # FIXME
 
 # Life cycle stage of the lesson
@@ -29,7 +29,7 @@ life_cycle: 'pre-alpha' # FIXME
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/melbournebioinformatics/workbench-template-md' # FIXME
+source: 'https://github.com/melbournebioinformatics/workbench-template-rmd' # FIXME
 
 # Default branch of your lesson
 branch: 'main'

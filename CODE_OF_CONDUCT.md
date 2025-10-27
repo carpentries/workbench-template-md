@@ -2,6 +2,8 @@
 title: "Contributor Code of Conduct"
 ---
 
+Although this is Melbourne Bioinformatics content, we abide by the same Carpentries Code of Conduct explicited below:
+
 As contributors and maintainers of this project,
 we pledge to follow the [The Carpentries Code of Conduct][coc].
 
