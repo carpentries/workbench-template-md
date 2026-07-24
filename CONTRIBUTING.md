@@ -71,8 +71,7 @@ The maintainers are community volunteers, and have final say over what gets merg
 ### Other Resources
 
 The Carpentries is a global organisation with volunteers and learners all over the world.
-We share values of inclusivity and a passion for sharing knowledge, teaching and learning. There are several ways to connect with The Carpentries community listed at <https://carpentries.org/connect/> including via social
-media, slack, newsletters, and email lists. 
+We share values of inclusivity and a passion for sharing knowledge, teaching and learning. There are several ways to connect with The Carpentries community listed at <https://carpentries.org/connect/> including via social media, slack, newsletters, and email lists. 
 You can also [reach us by email][contact].
 
 [ai-policy]: https://docs.carpentries.org/policies/genai-policy.html
