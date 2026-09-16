@@ -2,20 +2,20 @@
 # Values for this lesson.
 #------------------------------------------------------------
 
-# Which carpentry is this (swc, dc, lc, or cp)?
-# swc: Software Carpentry
+# Which carpentry is this (dc, hpcc, lc, swc, or cp)?
 # dc: Data Carpentry
+# hpcc: HPC Carpentry
 # lc: Library Carpentry
+# swc: Software Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-# 
-# This option supports custom types so lessons can be branded
-# and themed with your own logo and alt-text (see `carpentry_description`)
-# See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
+# Note that you can also use a custom carpentry type. For more info,
+# see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
 carpentry: 'incubator'
 
-# Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+# Custom carpentry description
+# This will be used as the alt text for the logo
+# carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
 title: 'Lesson Title' # FIXME
